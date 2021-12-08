@@ -37,10 +37,10 @@ export class UserService {
       this.apiService.get('/user')
         .subscribe({
           next(data) {
-            that.resolveAuth(data.user)
+            that.resolveAuth(data.user);
           },
           error(msg) {
-            that.rejectAuth()
+            that.rejectAuth();
           }
         });
 

@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
 
+import {
+  FooterComponent,
+  HeaderComponent,
+  SharedModule
+} from './shared';
+
+import { AuthModule } from './modules';
+
+import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
+  declarations: [AppComponent, FooterComponent, HeaderComponent],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-
-    ])
+    CoreModule,
+    SharedModule,
+    AuthModule,
+    AppRoutingModule
   ],
-  declarations: [
-    AppComponent,
-  ],
-  providers: [
-
-  ],
-  bootstrap: [
-    AppComponent,
-  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

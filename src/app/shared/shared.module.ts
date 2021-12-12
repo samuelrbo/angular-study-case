@@ -5,7 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { ShowAuthedDirective } from './show-authed.directive';
-import { ListErrorsComponent } from './components';
+import {
+  ArticleListComponent,
+  ArticleMetaComponent,
+  ArticlePreviewComponent,
+  FavoriteButtonComponent,
+  FollowButtonComponent,
+  ListErrorsComponent
+} from './components';
 
 @NgModule({
   imports: [
@@ -17,7 +24,12 @@ import { ListErrorsComponent } from './components';
   ],
   declarations: [
     ListErrorsComponent,
-    ShowAuthedDirective
+    ShowAuthedDirective,
+    ArticleListComponent,
+    ArticleMetaComponent,
+    ArticlePreviewComponent,
+    FavoriteButtonComponent,
+    FollowButtonComponent
   ],
   exports: [
     CommonModule,

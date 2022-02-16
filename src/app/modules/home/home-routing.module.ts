@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home.component';
+import { HomeComponent, HomeAuthResolverService } from '@modules/home';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    // resolve: {
-    //   isAuthenticated:
-    // }
+    resolve: {
+      isAuthenticated: HomeAuthResolverService
+    }
   }
 ];
 

@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject, ReplaySubject, } from 'rxjs';
 
-import { ApiService, JwtService } from '.';
-import { User } from '../models';
-import { map, distinctUntilChanged } from 'rxjs/operators';
+import { ApiService, JwtService } from '@core/services';
+import { User, Credentials } from '@core/models';
+import { AuthType } from '@core/models/enum';
 
-import { Credentials } from '../models';
-import { AuthType } from '../models/enum';
+import { map, distinctUntilChanged } from 'rxjs/operators';
 
 @Injectable()
 export class UserService {

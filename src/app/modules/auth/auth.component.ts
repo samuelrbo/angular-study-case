@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { Errors, UserService, User } from '../../core';
+import { UserService } from '@core/services';
+import { Errors, User } from '@core/models';
 
 @Component({
   selector: 'app-auth-page',

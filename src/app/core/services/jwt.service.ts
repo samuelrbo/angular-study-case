@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { JWT_TOKEN } from '../constants';
+import { JWT_TOKEN } from '@core/constants';
 
 @Injectable()
 export class JwtService {

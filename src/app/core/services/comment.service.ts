@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { ApiService } from '.';
-import { Comment } from '../models';
+import { Comment } from '@core/models';
 import { map } from 'rxjs/operators';
 
 @Injectable()

@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {
-  FooterComponent,
-  HeaderComponent,
-  SharedModule
-} from './shared';
+import { CoreModule } from '@core/core.module';
 
-import { AuthModule } from './modules';
+import { FooterComponent, HeaderComponent } from '@shared/layout';
+import { SharedModule } from '@shared/shared.module';
 
-import { CoreModule } from './core/core.module';
+import { AuthModule } from '@modules/auth';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { User, UserService } from '../../core';
+import { UserService } from '@core/services';
+import { User } from '@core/models';
 
 @Component({
   selector: 'app-settings-page',

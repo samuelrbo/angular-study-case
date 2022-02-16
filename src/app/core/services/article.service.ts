@@ -3,8 +3,8 @@ import { HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { ApiService } from '.';
-import { Article, ArticleListFilter, ArticleSearchRespose } from '../models';
-import { ArticleType } from '../models/enum';
+import { Article, ArticleListFilter, ArticleSearchRespose } from '@core/models';
+import { ArticleType } from '@core/models/enum';
 import { map } from 'rxjs/operators';
 
 @Injectable()

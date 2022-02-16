@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 
-import { Article, ArticleListFilter, ArticleService } from '../../../../core';
+import { ArticleService } from '@core/services';
+import { Article, ArticleListFilter } from '@core/models';
 
 @Component({
   selector: 'app-article-list',
@@ -29,7 +30,7 @@ export class ArticleListComponent {
     private articleService: ArticleService,
   ) {}
 
-  setPage(pageNumber: number): void {
+  setPageTo(pageNumber: number): void {
     this.currentPage = pageNumber;
     this.runQuery();
   }

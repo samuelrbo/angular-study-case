@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-import { ShowAuthedDirective } from './show-authed.directive';
+import { ShowAuthedDirective } from '@shared/show-authed.directive';
 import {
   ArticleListComponent,
   ArticleMetaComponent,
@@ -12,7 +12,7 @@ import {
   FavoriteButtonComponent,
   FollowButtonComponent,
   ListErrorsComponent
-} from './components';
+} from '@shared/components';
 
 @NgModule({
   imports: [
